@@ -34,4 +34,8 @@ useradd rogerio -c "Rogerio do Grupo SEC" -s /bin/bash -m -p $(openssl passwd se
 
 echo "Usuário do grupos SEC criados com sucesso"
 
+echo "Ajustando permissões dos diretórios"
+
 chmod 777 publico && chown root:GRP_ADM adm && chmod 770 adm && chown root:GRP_VEN ven && chmod 770 ven && chown root:GRP_SEC sec && chmod 770 sec
+
+echo "Projeto finalizado com sucesso!!!"
